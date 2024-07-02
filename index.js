@@ -49,7 +49,7 @@ function convert(filename) {
             "-gravity",
             "center",
             "-extent",
-            "600x800",
+            "1200x1600",
             "-colorspace",
             "gray",
             "-depth",
