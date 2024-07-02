@@ -48,7 +48,7 @@ function convert(filename) {
             filename,
             "-gravity",
             "center",
-            "-extent",
+            "-resize",
             "1200x1600",
             "-colorspace",
             "gray",
