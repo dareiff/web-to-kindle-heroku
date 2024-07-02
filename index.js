@@ -15,6 +15,8 @@ express()
     const page = await browser.newPage();
     await page.setViewport({ width: 600, height: 800 });
     await page.goto(process.env.SCREENSHOT_URL || 'https://home-ui.vercel.app/');
+    // pause for 2 seconds to allow the page to load
+    await page.waitForTimeout(2000);
     await page.screenshot({
       path: '/tmp/screenshot.png',
     });
