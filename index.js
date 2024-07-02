@@ -12,8 +12,6 @@ express()
     .set("view engine", "ejs")
     .get("/", async (req, res) => {
         const browser = await puppeteer.launch({
-            dumpio: true,
-            headless: false,
             args: ["--no-sandbox", "--disable-setuid-sandbox"],
         });
         const page = await browser.newPage();
