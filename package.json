@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "A service to create Kindle-ready web page screenshots",
   "engines": {
-    "node": "22.4.1"
+    "node": "12.22.9"
   },
   "main": "index.js",
   "scripts": {
