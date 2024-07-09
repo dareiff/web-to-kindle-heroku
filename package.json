@@ -2,16 +2,13 @@
   "name": "web-to-kindle-heroku",
   "version": "0.2.0",
   "description": "A service to create Kindle-ready web page screenshots",
-  "engines": {
-    "node": "12.22.9"
-  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.19.2",
-    "puppeteer": "^22.12.1"
+    "puppeteer": "^12.0.0"
   },
   "repository": {
     "type": "git",
