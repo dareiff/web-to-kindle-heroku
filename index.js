@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
 const execFile = require("child_process").execFile;
 const fs = require("fs");
 
@@ -12,6 +12,7 @@ express()
     .set("view engine", "ejs")
     .get("/", async (req, res) => {
         const browser = await puppeteer.launch({
+            executablePath: "/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta",
             args: ["--no-sandbox", "--disable-setuid-sandbox"],
         });
         const page = await browser.newPage();
